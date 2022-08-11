@@ -1,0 +1,163 @@
+*{
+  margin: 0px;
+  background-color: #c3c3c3;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-image {
+  width: 160px;
+}
+
+.navbar-container{
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.navbar-like{
+  padding: 5px;
+}
+
+.searchbar-container{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.searchbar {
+  background-color: white;
+  margin-right: 20px;
+}
+
+.searchbar input {
+  padding: 10px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+  border-radius: 1px;
+  border: none;
+  width: 200px;
+}
+
+.searchbar-button button{
+  background-color: #0e6f9f;
+  border: none;
+  border-radius: 10px;
+  height: 44px;
+  color: white;
+  padding: 10px 12px;
+}
+
+.pokedex-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+
+.pokedex-header h1{
+  font-family: monospace;  
+  color: #0e6f9f;
+}
+
+.pokedex-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.pokemon-card {
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+  border-radius: 3px;
+}
+
+.pokemon-image {
+  width: 70px;
+  height: 70px;
+}
+
+.pokemon-image-container {
+  padding: 0px 5px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+  flex: 1;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top h3{
+  text-transform: capitalize;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon-type {
+  display: flex;
+}
+
+.pokemon-type-text {
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.button-left, .button-right{
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.pokemon-heart-btn {
+  border: none;
+  background-color: #c3c3c3;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  padding: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.not-found-text {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+}
