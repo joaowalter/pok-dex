@@ -99,6 +99,7 @@ function App() {
       />}
     </div>
       </FavoriteProvider>
+      
   );
 }
 

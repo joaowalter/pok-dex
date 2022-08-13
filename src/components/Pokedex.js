@@ -16,9 +16,6 @@ const Pokedex = (props) => {
     }
     return (
         <div>
-            <div className="pokedex-header">
-                <h1>Pokedex</h1>
-            </div>
             {loading ? (
             <div>Carregando, aguarde...</div>
             ) : (
