@@ -1,3 +1,9 @@
+Pokédex in ReactJS!
+
+API: https://pokeapi.co/
+Codesandbox: https://codesandbox.io/s/determined-stonebraker-9oc26h?file=/src/App.js:1510-1514
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
