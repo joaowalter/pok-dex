@@ -1,13 +1,24 @@
-import React, {useContext} from "react";
+import React, {useContext, useMemo, useState} from "react";
 import FavoriteContext from "../contexts/favoritesContext";
+import Button from '@mui/material/Button';
 
 const Pokemon = (props) => {
+    const [heartBox, setHeartBox] = useState("🖤");
     const {favoritePokemons, updateFavoritePokemons} = useContext(FavoriteContext);
     const {pokemon} = props;
-    const onHeartClick = () => {
+
+    const heartColor = useMemo(() => {
+        if(favoritePokemons.includes(pokemon.name)){
+            setHeartBox("❤️");
+        } else {
+            setHeartBox("🖤");
+        }
+    },[favoritePokemons])
+
+    const onHeartClick = () => {   
         updateFavoritePokemons(pokemon.name)
     }
-    const heart = favoritePokemons.includes(pokemon.name) ? "❤️" : "🖤";
+
     return (
     <div className="pokemon-card">
         <div className="pokemon-image-container">
@@ -22,12 +33,12 @@ const Pokemon = (props) => {
                 <div className="card-type">
                     {pokemon.types.map((type, index) => {
                         return(
-                        <div key={index} className="pokemon-type-text">{type.type.name}</div>
+                        <Button variant="outlined" size="small" key={index} className="pokemon-type-text">{type.type.name}</Button>
                         )
                     })}
                 </div>
                 <button className="pokemon-heart-btn" onClick={onHeartClick}>
-                    {heart}
+                    {heartBox}
                 </button>
             </div>
         </div>

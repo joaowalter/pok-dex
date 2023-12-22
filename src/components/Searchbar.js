@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import SearchIcon from '@mui/icons-material/Search';
+import IconButton from '@mui/material/IconButton';
+import TextField from '@mui/material/TextField';
 
 const Searchbar = (props) => {
     const [search, setSearch] = useState("charizard")
@@ -18,10 +21,15 @@ const Searchbar = (props) => {
     return (
         <div className="searchbar-container">
             <div className="searchbar">
-                <input placeholder="Buscar pokémon" onChange={onChangeHandler}/>
+            <TextField size="small" placeholder="Buscar pokémon" onChange={onChangeHandler} InputProps={{type: 'search',}}
+          />
+
+              
             </div>
             <div className="searchbar-button">
-                <button onClick={onButtonClickHandler}>Buscar</button>
+                <IconButton onClick={onButtonClickHandler} aria-label="Buscar">
+                    <SearchIcon />
+                </IconButton>
             </div>
         </div>
     )

@@ -1,6 +1,7 @@
 import React from "react";
 import Pagination from "./Pagination";
 import Pokemon from "./Pokemon";
+import CircularProgress from '@mui/material/CircularProgress';
 
 const Pokedex = (props) => {
     const {pokemons, loading, page, setPage, totalPages} = props;
@@ -17,7 +18,9 @@ const Pokedex = (props) => {
     return (
         <div>
             {loading ? (
-            <div>Carregando, aguarde...</div>
+                <div className="circular-progress">
+           <CircularProgress/>
+           </div>
             ) : (
                 <div className="pokedex-grid">
                 {pokemons && pokemons.map((pokemon, index) => {
