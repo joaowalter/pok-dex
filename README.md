@@ -1,7 +1,7 @@
 Pokédex in ReactJS!
 
 API: https://pokeapi.co/
-Codesandbox: https://codesandbox.io/s/determined-stonebraker-9oc26h?file=/src/App.js:1510-1514
+Codesandbox: https://codesandbox.io/p/sandbox/pok-dex2-bluvr4
 
 
 
