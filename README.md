@@ -1,7 +1,7 @@
 Pokédex in ReactJS!
 
 API: https://pokeapi.co/
-Codesandbox:https://codesandbox.io/p/github/joaowalter/pok-dex/master?workspaceId=3a6fbad4-d3b3-4834-9414-6f48fea2d1db
+Codesandbox: https://codesandbox.io/p/github/joaowalter/pok-dex/master
 
 
 # Getting Started with Create React App
